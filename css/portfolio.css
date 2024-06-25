@@ -1,0 +1,264 @@
+body{
+
+    margin: auto;
+}
+
+p{
+
+    font-family: monospace;
+    font-size: 18px;
+}
+
+h1,h2,h3{
+
+    font-family: fantasy;
+}
+
+/*SLIDER*/
+
+#slider{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    margin-top: 30px;
+}
+
+#precedent{
+
+position: absolute;
+left: 70px;
+width: 5%;
+
+}
+
+#precedent img{
+
+    width: 100%;
+    
+    }
+
+#suivant{
+
+position: absolute;
+right: 70px;
+width: 5%;
+
+
+}
+
+#suivant img{
+
+    width: 100%;
+    
+    }
+
+.imgSlider{
+
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+} 
+
+.imgSlider img{
+
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#MesProjets{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+/* MENU */
+
+#menu{
+
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+
+}
+
+.liensmenu{
+  
+   display: flex;
+   gap: 40px;
+   padding: 0; 
+
+}
+
+.liensmenu li{
+  
+    list-style: none;
+    
+}
+
+.liensmenu a{
+  
+    text-decoration: none; 
+    color: black;
+    font-size: 16px;
+    font-family: monospace;
+ 
+}
+
+
+/* BANNER HEADER*/
+
+.banner img {
+
+    animation: fadeIn 2s ease-in-out;
+
+  }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+/* PRESENTATION */
+
+#presentation{
+
+    width: 55%;
+}
+
+#presentation p{
+
+    margin-top: 20px;
+
+}
+
+
+.gpresentation{
+
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* COMPETENCES*/
+
+.competencecol{
+
+    width: 45%;
+    
+    
+}
+
+#competencesgp{
+
+    margin-top: 100px;
+    
+}
+
+
+#competences{
+
+    margin-top: 50px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* CONTACT */
+
+#contact{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    background-color: rgb(33, 30, 63);
+}
+
+#contact h2{
+
+    color: white;
+}
+
+.formulaire{
+
+    display: flex;
+
+}
+
+.formulaire input{
+
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.formulaire textarea{
+
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.formulaire p{
+
+    color: white;
+    
+}
+
+.form-infos{
+
+    display: flex;
+    gap: 100px;
+}
+
+.informations p {
+
+    color: white;
+    
+}
+
+.informations{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1024px){
+
+}
+
+@media screen and (max-width: 780px){
+
+    .liensmenu a{
+        
+        font-size: 10px;
+    }
+
+    .form-infos{
+
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+}
+
+@media screen and (max-width: 780px){
+    
+}
+
+
+
