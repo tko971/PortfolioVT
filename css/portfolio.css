@@ -6,12 +6,72 @@ body{
 p{
 
     font-family: monospace;
-    font-size: 18px;
+    font-size: 1,8em;
 }
 
 h1,h2,h3{
 
     font-family: fantasy;
+}
+
+a{
+
+    text-decoration: none;
+}
+
+li{
+
+    list-style: none; 
+    color: black;
+    font-size: 1,3em;
+    font-family: monospace;
+
+}
+
+/* PROJETS */
+
+.titre{
+
+    margin-top: 100px;
+}
+
+.projet{
+
+    width: 30%;
+    padding-top: 2%;
+    justify-content: center;
+
+}
+
+.projets{
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.projetimg{
+
+    width: 100%;
+    height: 78%;
+    
+}
+
+.projetitre{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    font-size: 1em;
+}
+
+.projetimg img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /*SLIDER*/
@@ -22,7 +82,7 @@ h1,h2,h3{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 500px;
+    padding-top: 5%;
     margin-top: 30px;
 }
 
@@ -94,21 +154,6 @@ width: 5%;
    gap: 40px;
    padding: 0; 
 
-}
-
-.liensmenu li{
-  
-    list-style: none;
-    
-}
-
-.liensmenu a{
-  
-    text-decoration: none; 
-    color: black;
-    font-size: 16px;
-    font-family: monospace;
- 
 }
 
 
@@ -236,7 +281,87 @@ width: 5%;
     justify-content: center;
 }
 
+#footer{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#copyright{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 60%;
+}
+
+.my-footer-menu{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    
+}
+
+.my-footer-menu a{
+
+    text-decoration: none;
+    color: black;
+    font-family: monospace;
+    
+
+}
+
+/* SINGLE POST*/
+
+.post{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.post-info{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    margin-top: 30px;
+}
+
+.post-info a{
+
+    margin-top: 20px;
+    margin-bottom: 100px;
+    
+}
+
+
 @media screen and (max-width: 1024px){
+
+    #copyright{
+
+        flex-direction: column;
+        gap: initial;
+
+    }
+
+    .my-footer-menu{
+
+        flex-direction: column;
+        gap: initial;
+        padding: 0;
+        gap: 25px;
+
+    }
 
 }
 
@@ -251,6 +376,11 @@ width: 5%;
 
         display: flex;
         flex-direction: column;
+    }
+
+    .projetitre{
+
+        font-size: small;
     }
     
 
