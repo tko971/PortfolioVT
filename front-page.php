@@ -19,11 +19,12 @@ $my_posts = new WP_Query(array('post_type' => 'projet'));
     <p>Aucune article a été trouvé.</p>
 <?php endif; ?>
 </div>
-<h2 id="MesProjets">Quelques projets réalisés</h2>
+<hr>
 <div id="slider">
-    <div class="imgSlider"><img class="imgslider" src="<?php echo get_stylesheet_directory_uri(); ?>/images/fleurs.png" alt=""></div>
+    <div class="imgSlider"><img class="imgslider" src="<?php echo get_stylesheet_directory_uri(); ?>/images/HOMMESERVER.jpg" alt=""></div>
     <div id="precedent"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ArrowLeft.png" alt=""></div>
     <div id="suivant"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ArrowRight.png" alt=""></div>
+    <h3>Faites quelque chose de simple, de mémorisable, d'agréable a regarder et d'amusant a lire...<br>LEO BURNETT</h3>
 </div>
 <div id="contact">
     <h2>CONTACTEZ MOI</h2>

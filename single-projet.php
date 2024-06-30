@@ -15,7 +15,7 @@
         ]
       ); 
       ?>
-<div class="main single">
+<div class="main-single">
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
 <div class="post">
