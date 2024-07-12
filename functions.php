@@ -8,6 +8,7 @@ function theme_enqueue_styles()
    
     $ajax=array(
       "ajaxurl"=>admin_url("admin-ajax.php"),
+      "imgurl" =>site_url("")
     );
     wp_add_inline_script('theme-script','let ajax_data='.wp_json_encode($ajax).";","before"); //traitement des requetes ajax
     

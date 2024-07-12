@@ -19,7 +19,7 @@ const imageSlide = [
     'image':"SERVEUR.jpg",
     'tagline':"Pour etre a jour il faut se mettre a l'apache...<br>MAX" 
 
-    },
+    }
 ]
 
 let arrowL = document.querySelector("#precedent");
@@ -29,18 +29,21 @@ let tagline = document.querySelector('#slider h3');
 
 let i = 0;
 
-arrowR.addEventListener("click" , () =>{
+arrowR.addEventListener("click" , function(){
 
     i++
-    if(i > imageSlide.length){i = 0}
-    currentimage.setAttribute("src","http://localhost/wordpress/wp-content/themes/PortfolioTV/images/"+ imageSlide[i].image);
+    if(i >= imageSlide.length){i = 0}
+    currentimage.setAttribute("src",ajax_data.imgurl+"/wp-content/themes/PortfolioTV/images/"+ imageSlide[i].image);
     tagline.innerHTML = imageSlide[i].tagline;
+    
 })
 
-arrowL.addEventListener("click" , () =>{
+arrowL.addEventListener("click" , function(){
 
     i--
-    if(i < 0){i = imageSlide.length}
-    currentimage.setAttribute("src","http://localhost/wordpress/wp-content/themes/PortfolioTV/images/"+ imageSlide[i].image);
+    if(i < 0){i = imageSlide.length-1}
+    currentimage.setAttribute("src",ajax_data.imgurl+"/wp-content/themes/PortfolioTV/images/"+ imageSlide[i].image);
     tagline.innerHTML = imageSlide[i].tagline;
+    
 })
+

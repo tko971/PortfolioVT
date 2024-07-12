@@ -6,18 +6,18 @@
 <?php 
 $my_posts = new WP_Query(array('post_type' => 'projet'));
 ?>
-<h2 class ="titre projets">Quelques projets réalisés</h2>
+<h2 id="projetsrealises" class ="titre projets">Quelques projets réalisés</h2>
 <div class="projets">
     <?php if($my_posts->have_posts()) : ?>
     <?php while($my_posts->have_posts()) : $my_posts->the_post(); ?>
-    <div class="projet">
+    <div class="projet"><a href="<?php the_permalink() ?>">
         <div class="projetitre"><?php the_title(); ?></div>
-        <div class="projetimg"><a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?> </div></a>
+        <div class="projetimg"><?php the_post_thumbnail(); ?> </div></a>
     </div>
     <?php endwhile; ?>
     <?php else: ?>
     <p>Aucune article a été trouvé.</p>
-<?php endif; ?>
+    <?php endif; ?>
 </div>
 <hr>
 <div id="slider">
